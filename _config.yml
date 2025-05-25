@@ -1,27 +1,16 @@
-# Tell GitHub Pages which theme to use
-remote_theme: "mmistakes/minimal-mistakes"
+# Use a built-in Jekyll theme—no local gems needed
+theme: jekyll-theme-cayman
 
-# Plugins
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-mathjax
+# Your site’s information
+title: "Luis Caicedo’s Math Musings"
+description: "Reflections on math, AI, and life in research."
+url: "https://cafecitocoma.github.io"
+baseurl: ""  # no subpath
 
-# MathJax for LaTeX support
+# Markdown & math support
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
 mathjax:
   path: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-
-# Site metadata
-title: "Luis Caicedo’s Math Musings"
-description: "Reflections on math, physics-informed ML, and life in research."
-url: "https://cafecitocoma.github.io"
-author:
-  name: "Luis Caicedo"
-#  avatar: "/assets/images/penguin-logo.png"  # adjust or remove
-
-# Optional: tweak colors/font schemes (see Minimal Mistakes docs)
-# scheme: "default"
-# header:
-#   background: "#f5f5f5"
-
